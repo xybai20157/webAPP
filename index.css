@@ -1,0 +1,299 @@
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
+    letter-spacing: 0.01rem;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:active{
+    text-decoration: none;
+}
+header {
+    position: fixed;
+    width: 100%;
+    height: 0.9rem;
+    background: #2b2a2d;
+    font-size: 0.3rem;
+    color: #fff;
+}
+
+header a:before {
+    display: block;
+    position: absolute;
+    left: 0.22rem;
+    width: 0.25rem;
+    height: 0.25rem;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    -webkit-transform: rotate(90deg);
+}
+
+header a:nth-child(1) {
+    color: #fff;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.21rem;
+}
+
+header span {
+    position: absolute;
+    width: 4rem;
+    left: 0.9rem;
+    top: 0.21rem;
+    text-align: center;
+}
+
+header ul {
+    position: absolute;
+    right: 0.3rem;
+    top: 0.4rem;
+    width: 0.7rem;
+    height: 0.1rem;
+}
+
+header ul li {
+    width: 0.12rem;
+    height: 0.125rem;
+    float: left;
+    margin-left: 0.1rem;
+    border-radius: 50%;
+    background: #fff;
+}
+.main{
+    position: absolute;
+    top: 0.9rem;
+    bottom: 1.35rem;
+    overflow: auto;
+    width: 100%;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    height: 4.36rem;
+    background: url("images/banner.png") no-repeat;
+    background-size: 100%;
+    line-height: 0;
+}
+
+.banner span:nth-of-type(1), .banner span:nth-of-type(3) {
+    display: block;
+    position: absolute;
+    top: 0.83rem;
+    width: 0.84rem;
+    height: 0.84rem;
+}
+
+.banner span:nth-of-type(1) {
+    left: 0.64rem;
+}
+
+.banner span:nth-of-type(2) {
+    position: absolute;
+    top: 1.2rem;
+    left: 1.75rem;
+    color: #fff;
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+}
+
+.banner span:nth-of-type(3) {
+    right: 0.64rem;
+}
+
+.banner span:nth-of-type(1) img, .banner span:nth-of-type(3) img {
+    width: 100%;
+}
+
+.banner p:nth-child(4) {
+    position: relative;
+    top: 2rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.18rem;
+    color: #fff;
+}
+
+.banner .but {
+    position: absolute;
+    left: 2.34rem;
+    top: 2.6rem;
+    text-align: center;
+    width: 1.6rem;
+    height: 0.4rem;
+}
+
+.banner .but img {
+    width: 100%;
+}
+
+.banner hr {
+    position: absolute;
+    bottom: 0.72rem;
+    width: 100%;
+    height: 1px;
+    border: none;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.number {
+    position: absolute;
+    bottom: 0.07rem;
+    width: 100%;
+    height: 0.42rem;
+    line-height: 0.42rem;
+    margin: 0.1rem 0;
+    color: #fff;
+}
+
+.banner .number p {
+    width: 49%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    font-size: 0.3rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.number p a {
+    position: absolute;
+    width: 0.3rem;
+    height: 0.4rem;
+    display: block;
+    top: 0;
+}
+
+.number p:nth-last-child(1) {
+    border-right: none
+}
+
+.number p:nth-child(1) a {
+    left: 0.3rem;
+    background: url("images/img4.png");
+    background-size: 100%;
+}
+
+.number p:nth-child(2) a {
+    right: 0.3rem;
+    background: url("images/img5.png");
+    background-size: 100%;
+}
+
+.socreList {
+    padding: 0 0.2rem;
+    background: #f0f0f0;
+}
+
+.socreList h3 {
+    font-size: 0.28rem;
+    padding-top: 0.3rem;
+    color: #4d4f51;
+}
+
+.socreList ul {
+    border-bottom: 1px solid #ccc;
+    font-size: 0.28rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    line-height: 0.7rem;
+}
+
+.socreList ul li:nth-child(2) {
+    font-size: 0.24rem;
+    color: #797979;
+}
+
+.socreList dl {
+    overflow: hidden;
+    padding: 0.2rem 0;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.socreList dt {
+    width: 1.54rem;
+    height: 1.2rem;
+    margin-right: 0.14rem;
+    float: left;
+}
+
+.socreList dt img {
+    width: 100%;
+}
+
+.socreList dd:nth-child(2) {
+    font-size: 0.3rem;
+}
+.socreList dd:nth-child(2) a{
+    color: #141414;
+}
+.socreList dd:nth-child(3) {
+    position: relative;
+    margin-top: 0.08rem;
+    line-height:0.4rem ;
+    color: #797979;
+    font-size: 0.2rem;
+}
+.socreList  dl.boderNone{
+    border-bottom: none;
+}
+.socreList dl dd span{
+    position: absolute;
+    right: 0.1rem;
+    top: 0.4rem;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.89rem;
+    padding: 0.23rem 0.2rem;
+    background: #fff;
+}
+footer a:nth-child(1) {
+    width: 4rem;
+    float: left;
+}
+footer a:nth-child(1) img{
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-right: 0.08rem;
+    float: left;
+}
+footer a:nth-child(1)  p:nth-child(2){
+    font-size: 0.36rem;
+}
+footer a:nth-child(1)  p:nth-child(3){
+    font-size: 0.24rem;
+}
+footer a:nth-child(2){
+    width: 1.2rem;
+    height: 0.6rem;
+    margin-top: 0.15rem;
+    float: right;
+    background: #289ce9;
+    font-size: 0.32rem;
+    color: #fff;
+    line-height: 0.6rem;
+    text-align: center;
+    user-select: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
